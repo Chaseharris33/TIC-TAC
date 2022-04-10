@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Tic Tac Toe</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section>
+        <h1 class="game--title">Tic Tac Toe</h1>
+        <div class="wrap">
+          <div>
+              <h4>enter players names </h4>
+              <label for="player1">Player 1</label>
+              <input type="text" placeholder="enter name" name="player1" id = "player1">
+            </div>
+            <div>
+              <label for="player1">Player 2</label>
+              <input type="text" placeholder="enter name" name="player2" id = "player2">
+              <button class="btn" onclick="displayGame()"> start game </button>
+            </div>
+           </div> 
+          <div id="preScreen">
+        <div class="game--container">
+            <div data-cell-index="0" class="cell"></div>
+            <div data-cell-index="1" class="cell"></div>
+            <div data-cell-index="2" class="cell"></div>
+            <div data-cell-index="3" class="cell"></div>
+            <div data-cell-index="4" class="cell"></div>
+            <div data-cell-index="5" class="cell"></div>
+            <div data-cell-index="6" class="cell"></div>
+            <div data-cell-index="7" class="cell"></div>
+            <div data-cell-index="8" class="cell"></div>
+        </div>
+        <h2 id="test" class="game-status"></h2>
+        <button class="game-restart">Restart Game</button>
+      </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
